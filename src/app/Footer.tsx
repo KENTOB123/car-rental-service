@@ -16,7 +16,7 @@ const Footer = () => {
         <div className='w-1/5 flex flex-col'>
             <h1 className='font-bold text-2xl'>COMPANY</h1>
             <div className='gap-3 flex flex-col'>
-            <span className='mt-3 hover:text-blue-600 hover:font-bold'>Tokyo</span>
+            <span className='mt-3 hover:text-blue-600 hover:font-bold cursor-pointer'>Tokyo</span>
             <span className='hover:text-blue-600 hover:font-bold cursor-pointer'>Careers</span>
             <span className='hover:text-blue-600 hover:font-bold cursor-pointer'>Blog</span>
             <span className='hover:text-blue-600 hover:font-bold cursor-pointer'>How we work</span>
