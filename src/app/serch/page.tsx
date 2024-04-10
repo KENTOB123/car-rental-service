@@ -18,7 +18,7 @@ type CAR_DATA = {
       fuel: string,
 };
 
-const Serch = ({ car, id }: {car: CAR_DATA, id: number }) => {
+export default function Serch ({ car, id }: {car: CAR_DATA, id: number }) {
   const searchParams = useSearchParams();
   return (
     <>
@@ -31,4 +31,4 @@ const Serch = ({ car, id }: {car: CAR_DATA, id: number }) => {
   )
 }
 
-export default Serch
+// export default Serch
