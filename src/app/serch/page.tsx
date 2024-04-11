@@ -4,6 +4,8 @@ import { CAR_DATA } from '../../data/CAR_DATA';
 import { useSearchParams } from 'next/navigation';
 import ParamsSerch from '../components/ParamsSerch';
 import NewSerch from '../components/NewSerch';
+import { NextPage } from 'next';
+import { Suspense } from 'react';
 
 type CAR_DATA = {
      name: string,
@@ -18,7 +20,12 @@ type CAR_DATA = {
       fuel: string,
 };
 
-export default function Serch ({ car, id }: {car: CAR_DATA, id: number }) {
+type NewProps = {
+  car: CAR_DATA,
+  id: number,
+};
+
+const Serch: React.FC<NewProps> = ({ car, id }: NewProps) => {
   const searchParams = useSearchParams();
   return (
     <>
@@ -31,4 +38,26 @@ export default function Serch ({ car, id }: {car: CAR_DATA, id: number }) {
   )
 }
 
-// export default Serch
+const SerchPage: NextPage = () => {
+  const carData: CAR_DATA = {
+    name: 'Car Name',
+    price: 'Car Price',
+    img: 'Car Image URL',
+    model: 'Car Model',
+    mark: 'Car Mark',
+    year: 'Car Year',
+    doors: 'Car Doors',
+    air: 'Car Air',
+    transmission: 'Car Transmission',
+    fuel: 'Car Fuel',
+  };
+  const id: number = 1;
+
+  return (
+  <Suspense fallback={<div>Loading...</div>}>
+  <Serch car={carData} id={id} />
+  </Suspense>
+  );
+};
+
+export default SerchPage;
