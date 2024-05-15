@@ -6,6 +6,12 @@ Customer can compare some car's detail, price, where rental place, fuel and imag
 The reason of why I made this website is that just I like cars and I would like to try to make usefull website by myself.
 I taked care about responsive design.
 
+インターネットから予約できるカーレンタルサービスサイトを作成しました。
+お客様がネット上でレンタカーの性能、画像、価格、返却場所などが選べるようになっています。
+このサイトを作成した理由としては、単に私が車好きであるということはもちろんですが
+自分自身の力でお客様にとって便利なサイトを作りに挑戦したいと思ったからです。
+特にレスポンシブで見やすいサイト制作に注力しました。
+
 Build with:  
 » tailwindCss  
 » React JS  
