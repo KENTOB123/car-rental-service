@@ -21,7 +21,7 @@ const CarBox = ({data, carID}: { data: CAR_DATA[], carID: number }) => {
   return (
     <>
     {data[carID].map((car, id) => (
-        <div key={id} className='flex items-center mr-4 gap-4'>
+        <div key={id} className='flex flex-col md:flex-row items-center mr-4 gap-4'>
             <div className='w-3/5'>
                 <Image 
                 src={car.img}

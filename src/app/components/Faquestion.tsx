@@ -14,8 +14,8 @@ const Faquestion = () => {
   return (
 
     <div className='w-full flex mb-20 pt-20 pb-20'>
-        <div className='w-1/5 flex items-center relative'>
-            <div className='absolute inset-0 overflow-hidden'>
+        <div className='w-none md:w-1/5 flex items-center relative'>
+            <div className='absolute inset-0 overflow-hidden hidden md:block'>
             <Image 
             src="/assets/BMW_7-Series.avif"
             alt=''
@@ -25,14 +25,14 @@ const Faquestion = () => {
             />
             </div>
         </div>
-        <div className='flex flex-col justify-center w-3/5'>
+        <div className='flex flex-col justify-center w-full md:w-3/5'>
             <div className='flex flex-col mb-20 text-center'>
                 <h4 className='font-bold text-4xl mb-4'>FAQ</h4>
                 <span className='font-bold text-5xl mb-10'>Frequently Asked Questions</span>
                 <p>Frequently Asked Questions About the Car Rental Booking Process
                 on Our Website: Answers to Common Concerns and Inquiries.</p>
             </div>
-            <div className='bg-slate-200 shadow-2xl px-10 py-5'>
+            <div className='bg-slate-200 shadow-2xl px-10 py-5 w-full'>
                 <div>
                 <div
                 id='q1'
@@ -118,7 +118,7 @@ An additional charge of $15.00 per day for each additional authorized driver wil
                
             </div>
         </div>
-        <div className='w-1/5'></div>
+        <div className='w-none md:w-1/5'></div>
     </div>
   )
 }

@@ -10,7 +10,7 @@ const Descri = () => {
             <span className='font-bold text-xl'>Plan Your trip now</span>
             <span className='font-bold text-4xl'>Quick & easy car rental</span>
         </div>
-        <div className='flex items-center w-4/5 gap-20 mt-10'>
+        <div className='flex flex-col md:flex-row items-center w-4/5 gap-20 mt-10'>
             <div className='flex flex-col items-center'>
                 <div className='mb-12'><DirectionsCarFilledIcon className='w-16 h-16 text-blue-500' /></div>
                 <span className='font-bold text-2xl mb-4'>Select Car</span>

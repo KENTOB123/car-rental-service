@@ -5,12 +5,12 @@ import React from 'react'
 const Team = () => {
   return (
     <div className='w-full flex flex-col justify-center items-center'>
-        <div className='flex items-center justify-around w-3/4'>
-          <div className='w-1/2 flex flex-col justify-center ml-10'>
+        <div className='flex flex-col md:flex-row items-center justify-around md:w-3/4'>
+          <div className='md:w-1/2 flex flex-col justify-center ml-10'>
             <span className='font-bold text-4xl'>Our Team</span>
             <span className='font-bold'>Home / Our Team</span>
           </div>
-          <div className='w-1/2'>
+          <div className='md:w-1/2'>
             <Image src='/assets/Audi_A5.avif' alt='' width={700} height={700} />
           </div>
         </div>

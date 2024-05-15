@@ -42,7 +42,7 @@ const SerchPage: NextPage = () => {
   const carData: CAR_DATA = {
     name: 'Car Name',
     price: 'Car Price',
-    img: 'Car Image URL',
+    img: '/Car_Image_URL',
     model: 'Car Model',
     mark: 'Car Mark',
     year: 'Car Year',

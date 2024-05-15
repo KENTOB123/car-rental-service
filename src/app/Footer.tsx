@@ -4,8 +4,8 @@ import EmailIcon from '@mui/icons-material/Email';
 
 const Footer = () => {
   return (
-    <footer className='w-full flex justify-center gap-10 mt-10 mb-20'>
-        <div className='w-1/5 flex flex-col'>
+    <footer className='w-full flex flex-col items-center md:flex-row justify-center gap-10 mt-10 mb-20'>
+        <div className='w-[90%] md:w-1/5 flex flex-col'>
             <div className='font-bold text-2xl'>
                 <span className='font-extrabold'>CAR</span><span> Rental</span>
             </div>
@@ -13,7 +13,7 @@ const Footer = () => {
             <span className='mt-3 font-bold'><CallIcon />000-000-0000</span>
             <span className='font-bold'><EmailIcon />000-000@gmail.com</span>
         </div>
-        <div className='w-1/5 flex flex-col'>
+        <div className='w-[90%] md:w-1/5 flex flex-col'>
             <h1 className='font-bold text-2xl'>COMPANY</h1>
             <div className='gap-3 flex flex-col'>
             <span className='mt-3 hover:text-blue-600 hover:font-bold cursor-pointer'>Tokyo</span>
@@ -22,7 +22,7 @@ const Footer = () => {
             <span className='hover:text-blue-600 hover:font-bold cursor-pointer'>How we work</span>
             </div>
         </div>
-        <div className='w-1/5 flex flex-col'>
+        <div className='w-[90%] md:w-1/5 flex flex-col'>
             <h1 className='font-bold text-2xl'>WORKING HOURS</h1>
             <div className='gap-3 flex flex-col'>
             <span className='mt-3'>Mon - Fri 9:00AM-9:00PM</span>
@@ -30,7 +30,7 @@ const Footer = () => {
             <span>Sun Closed</span>
             </div>
         </div>
-        <div className='w-1/5 flex flex-col'>
+        <div className='w-[90%] md:w-1/5 flex flex-col'>
             <h1 className='font-bold text-2xl'>SUBSCRIPTION</h1>
             <span className='mt-3'>Subscribe your email adress for latest news & updates</span>
             <div className='flex flex-col items-center mt-8'>

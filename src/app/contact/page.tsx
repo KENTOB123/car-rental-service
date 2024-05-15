@@ -15,7 +15,6 @@ type Place = {
 };
 
 const Contact: React.FC = () => {
-    const [selectedOption, setSelectedOption] = useState<string>('');
     const [selectedPlace, setSelectedPlace] = useState<string>('');
     const [subjextInput, setSubjextInput] = useState<string>('');
 
@@ -59,7 +58,7 @@ const Contact: React.FC = () => {
 
   return (
     <div>
-        <div className='flex items-center justify-around'>
+        <div className='flex flex-col md:flex-row items-center justify-around'>
             <div>
                 <h2 className='font-bold text-3xl mb-4'>Contact Us</h2>
                 <h4>お問い合わせは、受付時間内に順次対応いたします。</h4>
@@ -67,7 +66,7 @@ const Contact: React.FC = () => {
             <Image src="/assets/Infiniti_QX80.avif" alt='' width={700} height={700} />
         </div>
         <div  className='flex flex-col items-center justify-around'>
-            <div className='m-10 w-1/3'>
+            <div className='m-10 md:w-1/3'>
                 <select 
                 onChange={handleSelectPlace}
                 value={selectedPlace}
@@ -110,7 +109,7 @@ const Contact: React.FC = () => {
                     <p>Name</p>
                     <p>※required</p>
                 </span>
-                <span className='flex justify-around gap-3'>
+                <span className='flex flex-col md:flex-row justify-around gap-3'>
                 <input placeholder='First Name' className='h-12' ref={name} required />
                 <input placeholder='Family Name' className='h-12' ref={Faminame} required />
                 </span>

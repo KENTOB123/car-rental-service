@@ -5,8 +5,6 @@ import VehicleModal from '../components/VehicleModal';
 import MyDatePicker from '../components/DateSelect';
 import Image from 'next/image';
 import { CAR_DATA } from '../../data/CAR_DATA';
-import { useRouter, useSearchParams } from 'next/navigation';
-
 
 type Props = {
   carType?: string;
